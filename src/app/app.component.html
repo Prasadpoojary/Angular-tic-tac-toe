@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="heading"><span>T</span>ic<span>T</span>ac<span>T</span>oe</h1>
+  <div class="board">
+     
+      <div class="playboard">
+          <div class="target" *ngFor=" let item of itemArray ; index as i " (click)="handleTargetClick(i)">
+              <app-icons [itemName]="item"></app-icons>
+          </div>
+      </div>
+  </div>
+  <div class="result">
+    <div  *ngIf="winner">
+      <h1>{{winner}}</h1>
+      <button (click)="replay()">Replay</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,128 @@
+
+.container
+{
+    margin:0px;
+    background: rgba(0, 0, 0, 0.829);
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color:white;
+    position: absolute;
+}
+.heading
+{
+    position:absolute;
+    top:10px;
+    letter-spacing: 2px;
+
+}
+
+.heading span
+{
+    color:#32f800;
+    font-size: 35px;
+}
+.playboard
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:340px;
+    height:330px;
+    transition: .3s ease-in-out;
+}
+
+.target
+{
+    width:100px;
+    height:100px;
+    margin: 5px;
+    background:white;
+    color:green;
+    cursor: pointer;
+
+    font-size: 22px;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.target:nth-child(1)
+{
+    border-radius: 10px 0px 0px 0px;
+}
+.target:nth-child(3)
+{
+    border-radius: 0px 10px 0px 0px;
+}
+.target:nth-child(7)
+{
+    border-radius: 0px 0px 0px 10px;
+}
+.target:nth-child(9)
+{
+    border-radius: 0px 0px 10px 0px;
+}
+
+.result
+{
+    width:400px;
+    transition: .3s ease-in-out;
+}
+
+.result h1
+{
+    text-transform: uppercase;
+    
+}
+
+.result button
+{
+    background: #8d003b;
+    color:white;
+    border:none;
+    padding:10px;
+    font-size: 14px;
+    width:100px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.result button:hover
+{
+    background: #fff;
+    color:#8d003b;
+}
+
+
+@media screen and (max-width:600px)
+{
+    .playboard
+    {
+        margin-top: 80px;
+        width:220px;
+        height:150px;
+    }
+    .target
+    {
+        width:70px;
+        height:70px;
+        margin:1px;
+    }
+    
+    .result
+    {
+        margin-top: 20px;
+    }
+
+    .result h1
+    {
+        font-size: 22px;
+    }
+}
